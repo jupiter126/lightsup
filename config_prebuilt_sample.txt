@@ -1,0 +1,22 @@
+#######################  VARIABLES  #######################  
+
+## Uncomment the appropriate line for your architecture:
+#localversion=aarch64-unknown-linux-gnu
+#localversion=aarch64-unknown-linux-gnu-portable
+#localversion=x86_64-unknown-linux-gnu
+localversion=x86_64-unknown-linux-gnu-portable
+
+## Set user and service names:
+# SystemD name of your lighthouse beacon service:
+bnsysdname="lighthouse_beacon"
+# SystemD name of your lighthouse validator service:
+vtsysdname="lighthouse_validator"
+# User who runs the beacon daemon:
+bnuser="lighthousebeacon"
+# User who runs the validator daemon:
+vtuser="lighthousevalidator"
+
+###################### VARIABLE END #######################  
+#just in case lighthouse has issues, uncomment this to debug:
+#export RUST_BACKTRACE=full  # uncomment to debug lighthouse binary
+
