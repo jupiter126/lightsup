@@ -6,8 +6,11 @@
 # Current version 0.2: the untested! am waiting for new lighthouse version to test ^^
 
 My previous attempt sacrificed stability on the altar of functionality.  This was a bad idea.
+
 Last time I was implementing features that I was not using myself.  This was a bad idea.
+
 This time I take the other approach, I center on what I need, do little but do it well.
+
 I have only one node on an ubuntu box, other distros might run fine but I can not test.
 
 If you are searching for a similar script that compiles the binaries, 
@@ -21,6 +24,7 @@ If you are searching for a similar script that compiles the binaries,
 - Manage safe start/stop of the services
 
 You can see the desired result configuration in secure_files.png
+
 This script does not cover the firewall nor 2fa settings: do it yourself!
 
 ### Prerequisites / dependencies
@@ -35,24 +39,24 @@ To setup my node, I didn't follow one specific guide, but mixed the best practic
 - https://www.coincashew.com/coins/overview-eth/guide-or-security-best-practices-for-a-eth2-validator-beaconchain-node
 
 ### Files:
-lightsup.sh          ==> script
-config_prebuilt.txt  ==> configuration
-lightsuplog.txt      ==> log
-README.md            ==> this file
-secure_files.png     ==> example of secure configuration
+- lightsup.sh          ==> script
+- config_prebuilt.txt  ==> configuration
+- lightsuplog.txt      ==> log
+- README.md            ==> this file
+- secure_files.png     ==> example of secure configuration
 
 ### Usage: 
 !!! Automatic modes won't be reliable until I find a decent API for scheduling downtime !!!
-./lightsup.sh	- Calls main menu, speaks but doesn't log
-./lightsup.sh 0 - Automatic mode - Doesn't speak, doesn't log (not recommended)
-./lightsup.sh 1 - Automatic mode - Speaks, doesn't log.
-./lightsup.sh 2 - Automatic mode - Doesn't speak, Logs (good for cron)
-./lightsup.sh 3 - Automatic mode - Speaks and Logs
+- ./lightsup.sh	- Calls main menu, speaks but doesn't log
+- ./lightsup.sh 0 - Automatic mode - Doesn't speak, doesn't log (not recommended)
+- ./lightsup.sh 1 - Automatic mode - Speaks, doesn't log.
+- ./lightsup.sh 2 - Automatic mode - Doesn't speak, Logs (good for cron)
+- ./lightsup.sh 3 - Automatic mode - Speaks and Logs
 
 ### Todo:
-1 Find an API that allows to know if the validator is scheduled to propose.
-2 Manage failures (go back if update fails)
-3 Backup stuff
+- 1 Find an API that allows to know if the validator is scheduled to propose.
+- 2 Manage failures (go back if update fails)
+- 3 Backup stuff
 
 ### Contributions:
 If you would like to contribute to this project, you can either:
