@@ -53,10 +53,12 @@ To setup my node, I didn't follow one specific guide, but mixed the best practic
 - ./lightsup.sh 2 - Automatic mode - Doesn't speak, Logs (good for cron)
 - ./lightsup.sh 3 - Automatic mode - Speaks and Logs
 
+Backup and fallback functions have been implemented, not tested yet! 
+Note that backing-up/falling back implies shutting down and restarting services.
+
 ### Todo:
 - 1 Find an API that allows to know if the validator is scheduled to propose.
-- 2 Manage failures (go back if update fails)
-- 3 Backup stuff
+- 2 Manage fallback conditions... hard to say... manual so far
 
 ### Contributions:
 If you would like to contribute to this project, you can either:

@@ -1,0 +1,3 @@
+#versions
+0.2  - Original release
+0.3  - Implemented backup and fallback
