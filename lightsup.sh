@@ -96,7 +96,7 @@ function f_versioncheck { #sets $currentver and $latestver
 
 function f_prepare_update {
 #	apt update && apt -y upgrade
-	f_backup0 || message="$red Backup Failed $def" ; return 3
+#	f_backup0 || message="$red Backup Failed $def" ; return 3
 	if /usr/bin/wget -q -P "$workdir" "https://github.com/sigp/lighthouse/releases/download/$latestver/lighthouse-$latestver-$localversion.tar.gz"; then
 		if /usr/bin/wget -q -P "$workdir" "https://github.com/sigp/lighthouse/releases/download/$latestver/lighthouse-$latestver-$localversion.tar.gz.asc"; then
 			gpg --verify "$workdir/lighthouse-$latestver-$localversion.tar.gz.asc" "$workdir/lighthouse-$latestver-$localversion.tar.gz" 2>"$workdir/pgptest"
@@ -165,7 +165,7 @@ function f_backup2 { # after update
 
 function f_checkbackup {
 	if [[ $bckfail = "1" ]]; then
-		message="$red Backup failed" && f_say ; bckfail="0"; return 1
+		message="$red Backup failed$def" && f_say ; bckfail="0"; return 1
 	else
 		return 0
 	fi
