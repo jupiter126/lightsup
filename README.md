@@ -2,6 +2,9 @@
 ### Bash script to maintain lighthouse up to date
 #### M.I.T. Licence
 
+
+ !!! NOT PRODUCTION READY YET !!!
+
 ### BE WARNED
 # Current version 0.2: the untested! am waiting for new lighthouse version to test ^^
 
